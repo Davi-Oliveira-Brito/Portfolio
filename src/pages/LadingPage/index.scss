@@ -1,0 +1,301 @@
+main {
+    background-color: #1E1E1E;
+    color: #9153F4;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    .page1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
+            padding: 1vh 05vh 0vh 0vh;
+            height: 8vh;
+            width: 100%;
+
+            position: fixed;
+            background-color: #1a1a1a;
+
+
+
+            .header-texts {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 50%;
+
+                .header-text {
+                    font-family: 'Poppins-Regular';
+                    font-size: 20px;
+
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+
+                .header-text:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 85%;
+            height: 90%;
+
+            .infos-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 20vh;
+
+
+                .l1,
+                .l2,
+                .l3,
+                .l4 {
+
+                    color: #fff;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                }
+
+                .l1 {
+                    font-family: 'Poppins-Regular';
+                    font-size: 18px;
+                }
+
+                .l2 {
+                    font-family: 'Poppins-Bold';
+                    font-size: 40px;
+                    color: #9153F4;
+                }
+
+                .l3 {
+                    font-family: 'Poppins-Medium';
+                    font-size: 30px;
+
+                    span {
+                        color: #9153F4;
+                    }
+                }
+
+                .l4 {
+                    font-family: 'Poppins-Regular';
+                    font-size: 18px;
+                }
+
+            }
+
+            .cv-button {
+                width: 15vw;
+                height: 8vh;
+
+                background-color: #9153F4;
+                border-radius: 20px;
+                border: none;
+
+                cursor: pointer;
+
+                font-family: 'Poppins-Medium';
+                font-size: 20px;
+                color: #FFFFFF;
+                transition: 0.2s;
+
+            }
+
+            .cv-button:hover {
+                background-color: #5727a3;
+
+                /* Rectangle 7 */
+                box-shadow: 5px 5px #000 !important;
+
+                /*box-shadow: 5px 5px rgba(255, 255, 255, 0.25);*/
+                border-radius: 20px;
+
+            }
+        }
+
+    }
+
+    .page2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: Center;
+                width: 55vw;
+
+                .p2-tittle {
+                    font-family: 'Poppins-Bold';
+                    font-size: 40px;
+                    color: #FFFFFF;
+                    margin: 0%;
+                    padding: 0;
+                    line-height: 1;
+                }
+
+                .p2-text {
+                    font-family: 'Poppins-Regular';
+                    font-size: 20px;
+                    color: #FFFFFF;
+
+
+                }
+
+            }
+
+            .right {
+
+                width: 23vw;
+
+                img {
+                    width: 100%;
+
+                }
+            }
+
+        }
+
+        .techs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 25%;
+            width: 85%;
+
+
+            .tech-tittle {
+                font-family: 'Poppins-Bold';
+                color: #FFFFFF;
+                font-size: 40px;
+                margin: 0%;
+                padding: 0;
+                line-height: 1
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                img {
+                    width: 6vw;
+                }
+            }
+        }
+
+    }
+
+
+
+    .page3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 10vh;
+
+        .p3 {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+            .p3-tittle {
+                font-family: 'Poppins-Bold';
+                font-size: 40px;
+                color: #FFFFFF;
+                line-height: 1;
+                width: 85%;
+
+            }
+
+            .projetos {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 85%;
+                height: 100%;
+                gap: 10vh;
+            }
+        }
+
+
+
+    }
+
+    .page4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+        width: 100%;
+
+        .pg4-tittle{
+            .tittle{
+                font-family: 'Poppins-Bold';
+                color: #ffffff;
+                font-size: 40px;
+            }
+        }
+        .pg4-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25vw;
+            img{
+                height: 6vh;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                color: #ffffff;
+            }:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .assinatura{
+            p{
+                font-family: 'Poppins-Medium';
+                font-size: 25px;
+
+            }
+            p::after{
+            font-family: 'Poppins-Bold';
+            content: "Davi Oliveira Brito";
+            }
+        }
+    }
+
+}
