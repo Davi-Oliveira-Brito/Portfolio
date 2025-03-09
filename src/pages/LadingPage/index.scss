@@ -11,7 +11,6 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         width: 100%;
         height: 100vh;
         align-items: center;
@@ -21,17 +20,14 @@ main {
             flex-direction: row;
             justify-content: right;
             align-items: center;
-            padding: 1vh 05vh 0vh 0vh;
+            padding: 1vh 5vh 0vh 0vh;
             height: 8vh;
             width: 100%;
-
             position: fixed;
             background-color: #1a1a1a;
-
-
+            z-index: 100;
 
             .header-texts {
-
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -40,13 +36,35 @@ main {
                 .header-text {
                     font-family: 'Poppins-Regular';
                     font-size: 20px;
-
                     transition: 0.5s;
                     cursor: pointer;
                 }
 
                 .header-text:hover {
                     color: #ffffff;
+                }
+            }
+
+            @media (max-width: 768px) {
+                justify-content: center;
+                
+                .header-texts {
+                    width: 90%;
+                    justify-content: space-evenly;
+                    
+                    .header-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            @media (max-width: 480px) {
+                .header-texts {
+                    width: 95%;
+                    
+                    .header-text {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -64,12 +82,7 @@ main {
                 justify-content: space-between;
                 height: 20vh;
 
-
-                .l1,
-                .l2,
-                .l3,
-                .l4 {
-
+                .l1, .l2, .l3, .l4 {
                     color: #fff;
                     margin: 0;
                     padding: 0;
@@ -101,37 +114,73 @@ main {
                     font-size: 18px;
                 }
 
+                @media (max-width: 768px) {
+                    height: auto;
+                    gap: 15px;
+                    
+                    .l2 {
+                        font-size: 32px;
+                    }
+                    
+                    .l3 {
+                        font-size: 24px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .l1 {
+                        font-size: 16px;
+                    }
+                    
+                    .l2 {
+                        font-size: 28px;
+                    }
+                    
+                    .l3 {
+                        font-size: 20px;
+                    }
+                    
+                    .l4 {
+                        font-size: 16px;
+                    }
+                }
             }
 
             .cv-button {
                 width: 15vw;
                 height: 8vh;
-
                 background-color: #9153F4;
                 border-radius: 20px;
                 border: none;
-
                 cursor: pointer;
-
                 font-family: 'Poppins-Medium';
                 font-size: 20px;
                 color: #FFFFFF;
                 transition: 0.2s;
-
             }
 
             .cv-button:hover {
                 background-color: #5727a3;
-
-                /* Rectangle 7 */
                 box-shadow: 5px 5px #000 !important;
-
-                /*box-shadow: 5px 5px rgba(255, 255, 255, 0.25);*/
                 border-radius: 20px;
+            }
 
+            @media (max-width: 768px) {
+                .cv-button {
+                    width: 30vw;
+                    height: 7vh;
+                    font-size: 18px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .cv-button {
+                    width: 50vw;
+                    height: 6vh;
+                    font-size: 16px;
+                }
             }
         }
-
     }
 
     .page2 {
@@ -148,7 +197,6 @@ main {
             justify-content: space-between;
             align-items: center;
             width: 85%;
-
 
             .left {
                 display: flex;
@@ -169,22 +217,54 @@ main {
                     font-family: 'Poppins-Regular';
                     font-size: 20px;
                     color: #FFFFFF;
-
-
                 }
-
             }
 
             .right {
-
                 width: 23vw;
 
                 img {
                     width: 100%;
-
                 }
             }
 
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                gap: 30px;
+                
+                .left {
+                    width: 100%;
+                    
+                    .p2-tittle {
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .p2-text {
+                        font-size: 18px;
+                    }
+                }
+                
+                .right {
+                    width: 50vw;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .left {
+                    .p2-tittle {
+                        font-size: 28px;
+                    }
+                    
+                    .p2-text {
+                        font-size: 16px;
+                    }
+                }
+                
+                .right {
+                    width: 70vw;
+                }
+            }
         }
 
         .techs {
@@ -193,7 +273,6 @@ main {
             justify-content: space-between;
             height: 25%;
             width: 85%;
-
 
             .tech-tittle {
                 font-family: 'Poppins-Bold';
@@ -213,11 +292,45 @@ main {
                     width: 6vw;
                 }
             }
+
+            @media (max-width: 768px) {
+                height: auto;
+                gap: 20px;
+                
+                .tech-tittle {
+                    font-size: 32px;
+                }
+                
+                .icons {
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: center;
+                    
+                    img {
+                        width: 10vw;
+                    }
+                }
+            }
+
+            @media (max-width: 480px) {
+                .tech-tittle {
+                    font-size: 28px;
+                }
+                
+                .icons {
+                    img {
+                        width: 15vw;
+                    }
+                }
+            }
         }
 
+        @media (max-width: 768px) {
+            height: auto;
+            padding: 50px 0;
+            gap: 50px;
+        }
     }
-
-
 
     .page3 {
         display: flex;
@@ -227,18 +340,17 @@ main {
         padding-top: 10vh;
 
         .p3 {
-        display: flex;
-        flex-direction: column;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            
             .p3-tittle {
                 font-family: 'Poppins-Bold';
                 font-size: 40px;
                 color: #FFFFFF;
                 line-height: 1;
                 width: 85%;
-
             }
 
             .projetos {
@@ -249,13 +361,30 @@ main {
                 height: 100%;
                 gap: 10vh;
             }
+
+            @media (max-width: 768px) {
+                .p3-tittle {
+                    font-size: 32px;
+                }
+                
+                .projetos {
+                    gap: 7vh;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .p3-tittle {
+                    font-size: 28px;
+                }
+                
+                .projetos {
+                    gap: 5vh;
+                }
+            }
         }
-
-
-
     }
 
-    .page4{
+    .page4 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -263,39 +392,90 @@ main {
         height: 40vh;
         width: 100%;
 
-        .pg4-tittle{
-            .tittle{
+        .pg4-tittle {
+            .tittle {
                 font-family: 'Poppins-Bold';
                 color: #ffffff;
                 font-size: 40px;
             }
         }
-        .pg4-icons{
+        
+        .pg4-icons {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 25vw;
-            img{
+            
+            img {
                 height: 6vh;
                 cursor: pointer;
                 transition: transform 0.3s ease;
                 color: #ffffff;
-            }:hover {
-                transform: scale(1.1);
+                
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
 
-        .assinatura{
-            p{
+        .assinatura {
+            p {
                 font-family: 'Poppins-Medium';
                 font-size: 25px;
-
             }
-            p::after{
-            font-family: 'Poppins-Bold';
-            content: "Davi Oliveira Brito";
+            
+            p::after {
+                font-family: 'Poppins-Bold';
+                content: "Davi Oliveira Brito";
+            }
+        }
+
+        @media (max-width: 768px) {
+            height: auto;
+            padding: 40px 0;
+            gap: 30px;
+            
+            .pg4-tittle {
+                .tittle {
+                    font-size: 32px;
+                }
+            }
+            
+            .pg4-icons {
+                width: 50vw;
+                
+                img {
+                    height: 5vh;
+                }
+            }
+            
+            .assinatura {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pg4-tittle {
+                .tittle {
+                    font-size: 28px;
+                }
+            }
+            
+            .pg4-icons {
+                width: 70vw;
+                
+                img {
+                    height: 4vh;
+                }
+            }
+            
+            .assinatura {
+                p {
+                    font-size: 18px;
+                }
             }
         }
     }
-
 }
