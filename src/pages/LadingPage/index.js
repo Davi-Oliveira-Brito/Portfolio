@@ -1,8 +1,11 @@
 import './index.scss';
 import React from 'react';
 import DarkLightMode from '../../components/light-darkMode/index.js';
-import Projeto from '../../components/projects/index.js';
 import { Link } from 'react-scroll';
+
+
+import Projeto from '../../components/projects/index.js';
+import Header from '../../components/header/index.js';
 
 function LandingPage() {
 
@@ -24,16 +27,7 @@ function LandingPage() {
     return (
         <main>
             <section className='page1' id='Home'>
-                <div className='header'>
-                    <div className='header-texts'>
-                        <Link smooth={true} duration={500} className='header-text' to='Home' >Home</Link>
-                        <Link smooth={true} duration={500} className='header-text' to='SobreMim'>Sobre Mim</Link>
-                        <Link smooth={true} duration={500} className='header-text' to='Projetos'>Projetos</Link>
-                        <Link smooth={true} duration={500} className='header-text' to='Contato'>Contato</Link>
-                    </div>
-
-                    <DarkLightMode />
-                </div>
+                <Header/>
 
                 <div className='infos'>
                     <div className="infos-text">
