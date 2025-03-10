@@ -1,7 +1,5 @@
 import './index.scss';
 import React from 'react';
-import DarkLightMode from '../../components/light-darkMode/index.js';
-import { Link } from 'react-scroll';
 
 
 import Projeto from '../../components/projects/index.js';
