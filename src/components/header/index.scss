@@ -1,29 +1,47 @@
 /* Estilização geral do header */
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: end;
-    padding: 1vh 5vh;
     height: 8vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     background-color: #1a1a1a;
-    z-index: 100;
-
-    .test {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1vh 5vh;
-        height: fit-content;
-        width: 65%;
-        position: fixed;
-
-    }
 
 }
 
+.test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    width: 65%;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    height: fit-content;
+    width: 70%;
+
+}
+
+.nav-link {
+    font-family: 'Poppins-Medium';
+    line-height: 1;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
 
 /* Estilização do menu hambúrguer */
 .hamburger {
@@ -55,50 +73,46 @@
 }
 
 /* Esconde menu no mobile por padrão */
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    height: fit-content;
-    width: 70%;
-}
 
-.nav-link {
-    font-family: 'Poppins-Medium';
-    line-height: 1;
 
-}
 
 @media (max-width: 768px) {
+
+    .header {
+        align-items: center;
+
+        .test {
+            justify-content: space-between;
+            width: 95vw;
+            align-items: center;
+        }
+    }
+
+
     .hamburger {
         display: flex;
     }
-    
+
     .nav-links {
         display: none;
         position: absolute;
-        top: 8vh;
-        left: 0;
-        width: 100%;
-        background-color: #1a1a1a;
-        text-align: center;
-        padding: 10px 0;
+        top: 10vh;
+        text-align: start;
     }
-    
+
     /* Mostra o menu quando está ativo */
     .nav-links.open {
-        border: solid;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 30vh;
-        width: 60vw;
-        align-items: center;
-        border-radius: 20px;
+        justify-content: space-evenly;
 
-        margin:0 ;
-        padding: 0;
-        line-height: 0;
+        height: 50vh;
+        width: 95vw;
+        align-items: center;
+
+        border-radius: 15px;
+        color: #ffffff;
+        backdrop-filter: blur(10px);
+        background: rgba(19, 19, 19, 0.199); /* Escurece um pouco o fundo */ 
     }
 }
