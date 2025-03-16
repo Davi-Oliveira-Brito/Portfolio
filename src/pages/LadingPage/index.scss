@@ -1,6 +1,42 @@
-main {
+#light {
+    background-color: #FFFFFF;
+
+    .infos {
+        border-bottom: solid 1px #000000;
+    }
+
+    p {
+        color: #000;
+    }
+
+    h1 {
+        color: #5727A3;
+    }
+
+    .project{
+        background-color: #d0b8f7;
+        
+        .button p{color: #FFFFFF;}
+
+    }
+
+    .header{
+        color: #000000;
+        background-color: #9153f421;
+
+        .hamburger div{
+            background-color: #000;
+        }
+        .nav-link:hover {
+        color: #5727A3;
+        }
+    }
+}
+
+
+body {
     background-color: #1E1E1E;
-    color: #9153F4;
+
     width: 100%;
     height: 100%;
     padding: 0;
@@ -31,7 +67,10 @@ main {
                 justify-content: space-between;
                 height: 20vh;
 
-                .l1, .l2, .l3, .l4 {
+                .l1,
+                .l2,
+                .l3,
+                .l4 {
                     color: #fff;
                     margin: 0;
                     padding: 0;
@@ -67,12 +106,12 @@ main {
                     height: fit-content;
                     gap: 15px;
 
-                    
-                    
+
+
                     .l2 {
                         font-size: 32px;
                     }
-                    
+
                     .l3 {
                         font-size: 24px;
                     }
@@ -82,15 +121,15 @@ main {
                     .l1 {
                         font-size: 16px;
                     }
-                    
+
                     .l2 {
                         font-size: 28px;
                     }
-                    
+
                     .l3 {
                         font-size: 20px;
                     }
-                    
+
                     .l4 {
                         font-size: 16px;
                     }
@@ -122,7 +161,7 @@ main {
                     height: 7vh;
                     font-size: 18px;
                 }
-                
+
             }
 
             @media (max-width: 480px) {
@@ -130,9 +169,9 @@ main {
                     width: 50vw;
                     height: 6vh;
                     font-size: 16px;
-                    
+
                 }
-            
+
 
             }
         }
@@ -186,20 +225,20 @@ main {
             @media (max-width: 768px) {
                 flex-direction: column-reverse;
                 gap: 30px;
-                
+
                 .left {
                     width: 100%;
-                    
+
                     .p2-tittle {
                         font-size: 32px;
                         margin-bottom: 10px;
                     }
-                    
+
                     .p2-text {
                         font-size: 18px;
                     }
                 }
-                
+
                 .right {
                     width: 50vw;
                 }
@@ -210,12 +249,12 @@ main {
                     .p2-tittle {
                         font-size: 28px;
                     }
-                    
+
                     .p2-text {
                         font-size: 16px;
                     }
                 }
-                
+
                 .right {
                     width: 70vw;
                 }
@@ -251,16 +290,16 @@ main {
             @media (max-width: 768px) {
                 height: auto;
                 gap: 20px;
-                
+
                 .tech-tittle {
                     font-size: 32px;
                 }
-                
+
                 .icons {
                     flex-wrap: wrap;
                     gap: 20px;
                     justify-content: center;
-                    
+
                     img {
                         width: 10vw;
                     }
@@ -271,7 +310,7 @@ main {
                 .tech-tittle {
                     font-size: 28px;
                 }
-                
+
                 .icons {
                     img {
                         width: 15vw;
@@ -299,13 +338,16 @@ main {
             flex-direction: column;
             width: 100%;
             align-items: center;
-            
+
             .p3-tittle {
-                font-family: 'Poppins-Bold';
-                font-size: 40px;
-                color: #FFFFFF;
                 line-height: 1;
                 width: 85%;
+
+                h1 {
+                    font-family: 'Poppins-Bold';
+                    font-size: 40px;
+                    color: #FFFFFF;
+                }
             }
 
             .projetos {
@@ -321,7 +363,7 @@ main {
                 .p3-tittle {
                     font-size: 32px;
                 }
-                
+
                 .projetos {
                     gap: 7vh;
                 }
@@ -331,7 +373,7 @@ main {
                 .p3-tittle {
                     font-size: 28px;
                 }
-                
+
                 .projetos {
                     gap: 5vh;
                 }
@@ -354,19 +396,19 @@ main {
                 font-size: 40px;
             }
         }
-        
+
         .pg4-icons {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 25vw;
-            
+
             img {
                 height: 6vh;
                 cursor: pointer;
                 transition: transform 0.3s ease;
-                color: #ffffff;
-                
+
+
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -378,7 +420,7 @@ main {
                 font-family: 'Poppins-Medium';
                 font-size: 25px;
             }
-            
+
             p::after {
                 font-family: 'Poppins-Bold';
                 content: "Davi Oliveira Brito";
@@ -389,21 +431,21 @@ main {
             height: auto;
             padding: 40px 0;
             gap: 30px;
-            
+
             .pg4-tittle {
                 .tittle {
                     font-size: 32px;
                 }
             }
-            
+
             .pg4-icons {
                 width: 50vw;
-                
+
                 img {
                     height: 5vh;
                 }
             }
-            
+
             .assinatura {
                 p {
                     font-size: 20px;
@@ -417,15 +459,15 @@ main {
                     font-size: 28px;
                 }
             }
-            
+
             .pg4-icons {
                 width: 70vw;
-                
+
                 img {
                     height: 4vh;
                 }
             }
-            
+
             .assinatura {
                 p {
                     font-size: 18px;

@@ -33,8 +33,7 @@ const Header = () => {
                     <Link smooth={true} duration={500} className="nav-link" to="Projetos" onClick={closeMenu}>Projetos</Link>
                     <Link smooth={true} duration={500} className="nav-link" to="Contato" onClick={closeMenu}>Contato</Link>
                 </nav>
-
-                <DarkLightMode />
+                <DarkLightMode/>
             </div>
         </header>
     );

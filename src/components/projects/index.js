@@ -5,7 +5,7 @@ import './index.scss'
 export default function Projeto({ tittle, text, imagem, link }) {
 
     return (
-        <div className="projeto">
+        <div className="project">
             <div className="left">
                 <div className="texts">
                     <p className="tittle">{tittle}</p>

@@ -8,6 +8,7 @@
     width: 100vw;
     position: fixed;
     background-color: #1a1a1a;
+    color: #9153F4;
 
 }
 
@@ -54,7 +55,7 @@
 .hamburger div {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: #FFFFFF;
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -83,7 +84,7 @@
 
         .test {
             justify-content: space-between;
-            width: 95vw;
+            width: 90vw;
             align-items: center;
         }
     }

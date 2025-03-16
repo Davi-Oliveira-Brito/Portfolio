@@ -6,11 +6,11 @@ import Projeto from '../../components/projects/index.js';
 import Header from '../../components/header/index.js';
 
 function LandingPage() {
-
+    
     const CurriculoDownload = () => {
         const link = document.createElement("a");
-        link.href = "/Assets/pdf/Curriculo_Davi_Oliveira_Brito.pdf";
-        link.download = "Davi Oliveira Brito - Curriculo.pdf";
+        link.href = "/Assets/pdf/Davi Oliveira Brito - Cúrriculo.pdf";
+        link.download = "Davi Oliveira Brito - Cúrriculo.pdf";
         link.click();
 
         //essa função é a mesma coisa que criar uma tag <a> com o atributo 'download', exemplo:
@@ -18,19 +18,20 @@ function LandingPage() {
         //ambas funcionam do mesmo jeito
     };
 
+    
 
 
 
 
     return (
-        <main>
-            <section className='page1' id='Home'>
+        <>
+            <section className='page1' id='Home' >
                 <Header/>
 
                 <div className='infos'>
                     <div className="infos-text">
                         <p className='l1'>Olá! me chamo</p>
-                        <p className='l2'>Davi</p>
+                        <h1 className='l2'>Davi</h1>
                         <p className='l3'>Desenvolvedor <span>Full-Stack</span> e Técnico em Informática</p>
                         <p className='l4'>Técnico em Informática pelo Instituto Social Nossa Senhora de Fátima</p>
                     </div>
@@ -56,7 +57,7 @@ function LandingPage() {
                 </div>
 
                 <div className='techs'>
-                    <p className='tech-tittle'>Tecnologias</p>
+                    <h1 className='tech-tittle'>Tecnologias</h1>
                     <div className='icons'>
                         <img src="/Assets/svg/js.svg" alt="JS Icon" />
                         <img src="/Assets/svg/node.svg" alt="Node Icon" />
@@ -71,7 +72,7 @@ function LandingPage() {
             <section className='page3' id='Projetos' >
                 <div className='p3'>
                     <div className='p3-tittle' >
-                        <p>Projetos</p>
+                        <h1>Projetos</h1>
                     </div>
                     <div className='projetos'>
                         <Projeto
@@ -96,7 +97,7 @@ function LandingPage() {
 
             <section className='page4' id='Contato'>
                 <div className='pg4-tittle'>
-                    <p className='tittle'> Contato </p>
+                    <h1 className='tittle'> Contato </h1>
                 </div>
 
                 <div className='pg4-icons'>
@@ -110,7 +111,7 @@ function LandingPage() {
                     <p>Developed by </p>
                 </div>
             </section>
-        </main>
+        </>
     );
 
 }
