@@ -15,20 +15,29 @@
 
     .project{
         background-color: #d0b8f7;
-        
-        .button p{color: #FFFFFF;}
+
+        .button p{color: #FFFFFF;
 
     }
 
-    .header{
-        color: #000000;
-        background-color: #9153f421;
+    }
 
-        .hamburger div{
+    .header {
+        color: #000;
+        background-color: #9153f434;
+
+        .hamburger div {
             background-color: #000;
         }
+
         .nav-link:hover {
-        color: #5727A3;
+            color: #ffffff;
+        }
+
+        .nav-links.open {
+            color: #000000;
+            background: rgba(189, 187, 187, 0.281);
+            /* Escurece um pouco o fundo */
         }
     }
 }
@@ -419,6 +428,7 @@ body {
             p {
                 font-family: 'Poppins-Medium';
                 font-size: 25px;
+                color: #FFF;
             }
 
             p::after {
