@@ -6,7 +6,7 @@ import Projeto from '../../components/projects/index.js';
 import Header from '../../components/header/index.js';
 
 function LandingPage() {
-    
+
     const CurriculoDownload = () => {
         const link = document.createElement("a");
         link.href = "/Assets/pdf/Davi Oliveira Brito - Cúrriculo.pdf";
@@ -18,7 +18,7 @@ function LandingPage() {
         //ambas funcionam do mesmo jeito
     };
 
-    
+
 
 
 
@@ -26,7 +26,7 @@ function LandingPage() {
     return (
         <>
             <section className='page1' id='Home' >
-                <Header/>
+                <Header />
 
                 <div className='infos'>
                     <div className="infos-text">
@@ -88,6 +88,13 @@ function LandingPage() {
                                 Apresentando códigos e tirando duvidas feitas pelos visitantes sobre o curso etc. Obs(Site original não está mais no ar)"
                             imagem="/assets/svg/frei.svg"
                             link="https://glistening-axolotl-bd8dd6.netlify.app/"
+                        />
+                        <Projeto
+                            tittle="CineArchive"
+                            text="Principais atividades: Desenvolvimento de uma aplicação WEB para consulta de filmes, consumindo uma API pública (TMDB). 
+                            Implementação de rotas com React Router Dom, estilização com Sass e deploy realizado na Vercel."
+                            imagem="/assets/svg/cinearchive.svg"
+                            link="https://cinearchive.vercel.app/"
                         />
                     </div>
                 </div>
