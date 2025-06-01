@@ -9,8 +9,8 @@ function LandingPage() {
 
     const CurriculoDownload = () => {
         const link = document.createElement("a");
-        link.href = "/Assets/pdf/Davi Oliveira Brito - Cúrriculo.pdf";
-        link.download = "Davi Oliveira Brito - Cúrriculo.pdf";
+        link.href = "/Assets/pdf/CV_Davi Oliveira Brito.pdf"; // Caminho do arquivo PDF
+        link.download = "CV_Davi_Oliveira_Brito.pdf"; // Nome do arquivo ao ser baixado
         link.click();
 
         //essa função é a mesma coisa que criar uma tag <a> com o atributo 'download', exemplo:
