@@ -18,11 +18,11 @@ Acesse o portfólio em: [Portfolio Davi Oliveira Brito](https://portfolio-davi-o
 ## 📂 Como Rodar o Projeto Localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/Davi-Oliveira-Brito/Portfolio.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
-   cd nome-do-repositorio
+   cd Portfolio
    ```
 3. Instale as dependências:
    ```bash
