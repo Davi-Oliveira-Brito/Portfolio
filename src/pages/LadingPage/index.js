@@ -91,7 +91,7 @@ function LandingPage() {
                         />
                         <Projeto
                             tittle="CineArchive"
-                            text="Principais atividades: Desenvolvimento de uma aplicação WEB para consulta de filmes, consumindo uma API pública (TMDB). 
+                            text="Desenvolvimento de uma aplicação WEB para consulta de filmes, consumindo uma API pública (TMDB). 
                             Implementação de rotas com React Router Dom, estilização com Sass e deploy realizado na Vercel."
                             imagem="/assets/svg/cinearchive.svg"
                             link="https://cinearchive.vercel.app/"
