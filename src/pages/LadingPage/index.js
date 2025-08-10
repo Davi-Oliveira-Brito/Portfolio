@@ -18,6 +18,9 @@ function LandingPage() {
         //ambas funcionam do mesmo jeito
     };
 
+    let SobreMim = `Tenho 18 anos, estudo Análise e Desenvolvimento de Sistemas (ADS) na FAM e sou apaixonado por programação. 
+    Estou sempre buscando aprender e colocar em prática novos conhecimentos para crescer como desenvolvedor. 
+    Neste portfólio, você encontra meus projetos e experiências que mostram minha evolução na área.`
 
 
 
@@ -46,8 +49,7 @@ function LandingPage() {
                 <div className='about'>
                     <div className='left'>
                         <h1 className='p2-tittle'>Sobre Mim</h1>
-                        <p className='p2-text'>Tenho 18 anos e sou estudante de programação, procurando sempre evoluir e adquirir novos conhecimentos.
-                            Tenho conhecimento e algumas experiencias que serão apresentadas nesse portfólio.</p>
+                        <p className='p2-text'>{SobreMim}</p>
                     </div>
 
                     <div className='right'>
@@ -66,6 +68,7 @@ function LandingPage() {
                         <img src="/Assets/svg/sass.svg" alt="SASS Icon" />
                         <img src="/Assets/svg/html.svg" alt="HTML Icon" />
                         <img src="/Assets/svg/css.svg" alt="CSS Icon" />
+                        <img src="/Assets/svg/Figma.svg" alt="Figma Icon" />
                     </div>
                 </div>
             </section>
@@ -80,6 +83,14 @@ function LandingPage() {
                             text="Auxílio no desenvolvimento de tarefas frontend e backend conforme planejamento e arquitetura previamente definidos. Participação em reuniões de alinhamento, delegação de tarefas e atualização de status."
                             imagem="/assets/svg/devmonk.svg"
                             link="https://devmonk.com.br/"
+                        />
+                        <Projeto
+                            tittle="Food Manager 🚧 Em andamento"
+                            text="Sistema para organização e gerenciamento de alimentos, desenvolvido com React.js (frontend), Node.js (API REST) e MySQL (banco de dados).
+                                Permite registrar ambientes de armazenamento, controlar validade, quantidade e peso dos alimentos, além de editar, excluir e receber notificações de produtos próximos ao vencimento.
+                                O projeto inclui protótipo visual, modelagem do banco e implementação da API funcional."
+                            imagem="/assets/svg/FoodManager.svg"
+                            link="https://www.linkedin.com/posts/davi-oliveira-brito-b7267b252_uiux-figma-projetospessoais-activity-7353504004502364165-Qg_g"
                         />
                         <Projeto
                             tittle="Feira das Profissões"
