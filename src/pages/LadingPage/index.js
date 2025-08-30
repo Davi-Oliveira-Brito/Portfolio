@@ -1,7 +1,7 @@
 import './index.scss';
 import React from 'react';
 
-
+import { Toaster, toast } from 'react-hot-toast';
 import Projeto from '../../components/projects/index.js';
 import Header from '../../components/header/index.js';
 
@@ -16,6 +16,17 @@ function LandingPage() {
         //essa função é a mesma coisa que criar uma tag <a> com o atributo 'download', exemplo:
         //<a href="/Assets/pdf/Curriculo_Davi_Oliveira_Brito.pdf" download> Baixar CV </a>
         //ambas funcionam do mesmo jeito
+    };
+    const copiarEmail = () => {
+        const email = "davioliveirabrito@outlook.com";
+        navigator.clipboard.writeText(email).then(() => {
+            toast.success("Email copiado", {
+                style: {
+                    fontFamily: "Poppins-Regular",
+                    fontSize: "14px"
+                },
+            });
+        });
     };
 
     let SobreMim = `Tenho 18 anos, estudo Análise e Desenvolvimento de Sistemas (ADS) na FAM e sou apaixonado por programação. 
@@ -122,7 +133,7 @@ function LandingPage() {
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/davi-oliveira-brito-b7267b252/">  <img src="/assets/svg/linkedin.svg" alt="" />  </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5511972193396">  <img src="/assets/svg/wpp.svg" alt="" />       </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Davi-Oliveira-Brito">  <img src="/assets/svg/github.svg" alt="" />    </a>
-                    <a target="_blank" rel="noopener noreferrer" href="mailto:davioliveirabrito@outlook.com">  <img src="/assets/svg/email.svg" alt="" />     </a>
+                    <a onClick={copiarEmail} target="_blank" rel="noopener noreferrer" href="mailto:davioliveirabrito@outlook.com" >  <img src="/assets/svg/email.svg" alt="" />   <Toaster />  </a>
                 </div>
 
                 <div className='assinatura'>

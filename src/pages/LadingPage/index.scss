@@ -1,8 +1,8 @@
 #light {
     background-color: #FFFFFF;
-
+    
     .infos {
-        border-bottom: solid 1px #000000;
+        border-bottom: solid 1px #5727A3;
     }
 
     p {
@@ -14,8 +14,8 @@
     }
 
     .project{
-        background-color: #d0b8f7;
-
+        background-color: #00000000;
+        border: 1.5px solid #9153F4 ;
         .button p{color: #FFFFFF;
 
     }
@@ -24,14 +24,14 @@
 
     .header {
         color: #000;
-        background-color: #9153f434;
+        background-color: #E9DCFD;
 
         .hamburger div {
             background-color: #000;
         }
 
         .nav-link:hover {
-            color: #ffffff;
+            color: #5727A3;
         }
 
         .nav-links.open {
@@ -219,6 +219,7 @@ body {
                 .p2-text {
                     font-family: 'Poppins-Regular';
                     font-size: 20px;
+                    text-align: justify;
                     color: #FFFFFF;
                 }
             }
