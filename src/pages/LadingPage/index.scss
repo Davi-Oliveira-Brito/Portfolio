@@ -1,6 +1,6 @@
 #light {
-    background-color: #FFFFFF;
-    
+    background-color: #F2F2F2;
+
     .infos {
         border-bottom: solid 1px #5727A3;
     }
@@ -13,18 +13,42 @@
         color: #5727A3;
     }
 
-    .project{
-        background-color: #00000000;
-        border: 1.5px solid #9153F4 ;
-        .button p{color: #FFFFFF;
+    .card {
+        background-color: #FFF;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border: none;
 
+        .card__content {
+            .card__title {
+                color: #222222;
+            }
+        }
+
+        .card__footer {
+            .card__tags {
+                .card__tag {
+                    background: #1a1a1a;
+                    color: #e0e0e0;
+                }
+
+                .card__tag:hover {
+                    background: #9153f49f;
+                    color: #000000;
+                    border-color: #6528c9;
+                }
+            }
+        }
     }
 
+    .card:hover {
+        border-color: #1a1a1a;
     }
 
     .header {
         color: #000;
-        background-color: #E9DCFD;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
 
         .hamburger div {
             background-color: #000;
@@ -209,7 +233,7 @@ body {
 
                 .p2-tittle {
                     font-family: 'Poppins-Bold';
-                    font-size: 40px;
+                    font-size: 32px;
                     color: #FFFFFF;
                     margin: 0%;
                     padding: 0;
@@ -218,14 +242,14 @@ body {
 
                 .p2-text {
                     font-family: 'Poppins-Regular';
-                    font-size: 20px;
+                    font-size: 16px;
                     text-align: justify;
                     color: #FFFFFF;
                 }
             }
 
             .right {
-                width: 23vw;
+                width: 20vw;
 
                 img {
                     width: 100%;
@@ -281,7 +305,7 @@ body {
             .tech-tittle {
                 font-family: 'Poppins-Bold';
                 color: #FFFFFF;
-                font-size: 40px;
+                font-size: 32px;
                 margin: 0%;
                 padding: 0;
                 line-height: 1
@@ -291,6 +315,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+
                 img {
                     width: 6vw;
                     height: 8vh;
@@ -343,12 +368,12 @@ body {
         width: 100%;
         height: 100%;
         padding-top: 10vh;
+        align-items: center;
 
         .p3 {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            align-items: center;
+            width: 85%;
 
             .p3-tittle {
                 line-height: 1;
@@ -356,18 +381,17 @@ body {
 
                 h1 {
                     font-family: 'Poppins-Bold';
-                    font-size: 40px;
+                    font-size: 32px;
                     color: #FFFFFF;
                 }
             }
 
             .projetos {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                width: 85%;
-                height: 100%;
-                gap: 10vh;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px 50px;
+                /* pode ajustar */
             }
 
             @media (max-width: 768px) {
@@ -404,7 +428,7 @@ body {
             .tittle {
                 font-family: 'Poppins-Bold';
                 color: #ffffff;
-                font-size: 40px;
+                font-size: 32px;
             }
         }
 
@@ -429,7 +453,7 @@ body {
         .assinatura {
             p {
                 font-family: 'Poppins-Medium';
-                font-size: 25px;
+                font-size: 20px;
                 color: #FFF;
             }
 

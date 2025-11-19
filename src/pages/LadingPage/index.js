@@ -4,6 +4,7 @@ import React from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 import Projeto from '../../components/projects/index.js';
 import Header from '../../components/header/index.js';
+import Card from '../../components/card/index.js';
 
 function LandingPage() {
 
@@ -29,9 +30,12 @@ function LandingPage() {
         });
     };
 
-    let SobreMim = `Tenho 18 anos, estudo Análise e Desenvolvimento de Sistemas (ADS) na FAM e sou apaixonado por programação. 
-    Estou sempre buscando aprender e colocar em prática novos conhecimentos para crescer como desenvolvedor. 
-    Neste portfólio, você encontra meus projetos e experiências que mostram minha evolução na área.`
+    const idade = () => {
+    }
+
+    let SobreMim = `Olá! Sou Davi Oliveira Brito, tenho 19 anos e sou um estudante de Análise e Desenvolvimento de Sistemas na Faculdade das Américas (FAM).
+    Tenho me dedicado ao desenvolvimento Full Stack, atuando tanto no Front-End quanto no Back-End e buscando constantemente aprimorar minhas habilidades técnicas e práticas.
+    `
 
 
 
@@ -85,39 +89,43 @@ function LandingPage() {
             </section>
             <section className='page3' id='Projetos' >
                 <div className='p3'>
+
                     <div className='p3-tittle' >
                         <h1>Projetos</h1>
                     </div>
+
                     <div className='projetos'>
-                        <Projeto
-                            tittle="DevMonk"
+                     
+                        <Card
+                            title="DevMonk"
                             text="Auxílio no desenvolvimento de tarefas frontend e backend conforme planejamento e arquitetura previamente definidos. Participação em reuniões de alinhamento, delegação de tarefas e atualização de status."
-                            imagem="/assets/svg/devmonk.svg"
-                            link="https://devmonk.com.br/"
+                            technologies={['JavaScript','React', 'Node.js', 'MongoDB', 'Figma', 'Sass']}
+
                         />
-                        <Projeto
-                            tittle="Food Manager 🚧 Em andamento"
+                        <Card
+                            title="Feira das Profissões"
+                            text="Desenvolvimento de uma aplicação WEB para o Projeto Feira das Profissões 2022
+                                Apresentação dos Projetos desenvolvidos pelos alunos do curso de informática.
+                                Apresentando códigos e tirando duvidas feitas pelos visitantes sobre o curso etc."
+                            technologies={['JavaScript','React', 'Node.js', 'MySQL', 'Figma', 'Sass']}
+
+                        />
+                        <Card
+                            title="Finance Flow"
+                            text="sistema de gestão financeira pessoal que permite ao usuário cadastrar contas, registrar transações, visualizar dashboards com análises financeiras 
+                           e receber orientações inteligentes através de um assistente com IA. O objetivo é facilitar o controle do dinheiro, oferecer clareza sobre hábitos financeiros
+                           e sugerir melhorias de forma simples, visual e automatizada"
+                            technologies={['C#', '.Net', 'PostgreSQL', 'Figma']}
+
+                        />
+                        <Card
+                            title="Food Manager 🚧 PAUSADO"
                             text="Sistema para organização e gerenciamento de alimentos, desenvolvido com React.js (frontend), Node.js (API REST) e MySQL (banco de dados).
                                 Permite registrar ambientes de armazenamento, controlar validade, quantidade e peso dos alimentos, além de editar, excluir e receber notificações de produtos próximos ao vencimento.
                                 O projeto inclui protótipo visual, modelagem do banco e implementação da API funcional."
-                            imagem="/assets/svg/FoodManager.svg"
-                            link="https://www.linkedin.com/posts/davi-oliveira-brito-b7267b252_uiux-figma-projetospessoais-activity-7353504004502364165-Qg_g"
+                            technologies={['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS']}
                         />
-                        <Projeto
-                            tittle="Feira das Profissões"
-                            text="Desenvolvimento de uma aplicação WEB para o Projeto Feira das Profissões 2022
-                                Apresentação dos Projetos desenvolvidos pelos alunos do curso de informática.
-                                Apresentando códigos e tirando duvidas feitas pelos visitantes sobre o curso etc. Obs(Site original não está mais no ar)"
-                            imagem="/assets/svg/frei.svg"
-                            link="https://glistening-axolotl-bd8dd6.netlify.app/"
-                        />
-                        <Projeto
-                            tittle="CineArchive"
-                            text="Desenvolvimento de uma aplicação WEB para consulta de filmes, consumindo uma API pública (TMDB). 
-                            Implementação de rotas com React Router Dom, estilização com Sass e deploy realizado na Vercel."
-                            imagem="/assets/svg/cinearchive.svg"
-                            link="https://cinearchive.vercel.app/"
-                        />
+
                     </div>
                 </div>
 
