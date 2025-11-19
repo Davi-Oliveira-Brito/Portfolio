@@ -2,7 +2,6 @@ import './index.scss';
 import React from 'react';
 
 import { Toaster, toast } from 'react-hot-toast';
-import Projeto from '../../components/projects/index.js';
 import Header from '../../components/header/index.js';
 import Card from '../../components/card/index.js';
 
@@ -30,8 +29,7 @@ function LandingPage() {
         });
     };
 
-    const idade = () => {
-    }
+    
 
     let SobreMim = `Olá! Sou Davi Oliveira Brito, tenho 19 anos e sou um estudante de Análise e Desenvolvimento de Sistemas na Faculdade das Américas (FAM).
     Tenho me dedicado ao desenvolvimento Full Stack, atuando tanto no Front-End quanto no Back-End e buscando constantemente aprimorar minhas habilidades técnicas e práticas.
