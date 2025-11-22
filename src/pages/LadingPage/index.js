@@ -9,8 +9,8 @@ function LandingPage() {
 
     const CurriculoDownload = () => {
         const link = document.createElement("a");
-        link.href = "/Assets/pdf/CV_Davi Oliveira Brito.pdf"; // Caminho do arquivo PDF
-        link.download = "CV_Davi_Oliveira_Brito.pdf"; // Nome do arquivo ao ser baixado
+        link.href = "/Assets/pdf/CV - Davi Oliveira Brito.pdf"; // Caminho do arquivo PDF
+        link.download = "CV - Davi Oliveira Brito.pdf"; // Nome do arquivo ao ser baixado
         link.click();
 
         //essa função é a mesma coisa que criar uma tag <a> com o atributo 'download', exemplo:
@@ -76,8 +76,12 @@ function LandingPage() {
                     <div className='icons'>
                         <img src="/Assets/svg/js.svg" alt="JS Icon" />
                         <img src="/Assets/svg/node.svg" alt="Node Icon" />
-                        <img src="/Assets/svg/sql.svg" alt="SQL Icon" />
                         <img src="/Assets/svg/react.svg" alt="React Icon" />
+                        <img src="/Assets/svg/CSharp.svg" alt="C# Icon" />
+                        <img src="/Assets/svg/NET.svg" alt=".NET Icon" />
+                        <img src="/Assets/svg/PostgreSQL.svg" alt="PostgreSQL Icon" />
+                        <img src="/Assets/svg/sql.svg" alt="MySQL Icon" />
+                        <img src="/Assets/svg/MongoDb.svg" alt="MongoDB Icon" />
                         <img src="/Assets/svg/sass.svg" alt="SASS Icon" />
                         <img src="/Assets/svg/html.svg" alt="HTML Icon" />
                         <img src="/Assets/svg/css.svg" alt="CSS Icon" />
