@@ -113,7 +113,7 @@ function LandingPage() {
 
                         />
                         <Card
-                            title="Finance Flow"
+                            title="Finance Manager"
                             text="sistema de gestão financeira pessoal que permite ao usuário cadastrar contas, registrar transações, visualizar dashboards com análises financeiras 
                            e receber orientações inteligentes através de um assistente com IA. O objetivo é facilitar o controle do dinheiro, oferecer clareza sobre hábitos financeiros
                            e sugerir melhorias de forma simples, visual e automatizada"
@@ -121,7 +121,7 @@ function LandingPage() {
 
                         />
                         <Card
-                            title="Food Manager 🚧 PAUSADO"
+                            title="Food Manager"
                             text="Sistema para organização e gerenciamento de alimentos, desenvolvido com React.js (frontend), Node.js (API REST) e MySQL (banco de dados).
                                 Permite registrar ambientes de armazenamento, controlar validade, quantidade e peso dos alimentos, além de editar, excluir e receber notificações de produtos próximos ao vencimento.
                                 O projeto inclui protótipo visual, modelagem do banco e implementação da API funcional."
