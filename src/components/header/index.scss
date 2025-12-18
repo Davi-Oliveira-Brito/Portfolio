@@ -3,22 +3,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
-    height: 8vh;
-    width: 100vw;
+    align-items: center;
     position: fixed;
+
+    height: 6vh;
+    width: 40vw;
+
     background-color: #1a1a1a;
     color: #9153F4;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.575);
+
     z-index: 10;
+    margin-top: 1em;
+    border-radius: 100px;
+
 }
 
-.test {
+.headerr {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: fit-content;
-    width: 65%;
+    width: 100%;
 
 }
 
@@ -35,7 +42,7 @@
 .nav-link {
     font-family: 'Poppins-Medium';
     line-height: 1;
-
+    font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -54,15 +61,15 @@
 
 .hamburger div {
     width: 30px;
-    height: 4px;
+    height: 3px;
     background-color: #FFFFFF;
-    margin: 5px 0;
+    margin: 3px 0;
     transition: 0.3s;
 }
 
 /* Quando o menu está aberto, transforma o hambúrguer em "X" */
 .hamburger.active div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(2px, 2px);
 }
 
 .hamburger.active div:nth-child(2) {
@@ -75,17 +82,28 @@
 
 /* Esconde menu no mobile por padrão */
 
+@media (max-width: 1024px) {
+    .header {
+        padding: 2px 0px 2px 00px;
 
+        .headerr {
+            .nav-links {
+                .nav-link {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 768px) {
 
     .header {
         align-items: center;
+        width: 35vw;
 
-        .test {
-            justify-content: space-between;
-            width: 90vw;
-            align-items: center;
+        .headerr {
+            justify-content: space-around;
         }
     }
 
@@ -114,6 +132,7 @@
         border-radius: 15px;
         color: #ffffff;
         backdrop-filter: blur(10px);
-        background: rgba(0, 0, 0, 0.301); /* Escurece um pouco o fundo */ 
+        background: rgba(0, 0, 0, 0.301);
+        /* Escurece um pouco o fundo */
     }
 }
