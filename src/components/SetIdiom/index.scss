@@ -1,0 +1,95 @@
+.SetIdiom {
+  position: relative;
+  background-color: var(--bg-tertiary);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border-radius: 24px;
+}
+
+.idiom-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background 0.2s ease;
+}
+
+.idiom-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark .idiom-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.global-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.current-language {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.arrow-icon {
+  width: 12px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.idiom-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  min-width: 80px;
+  z-index: 100;
+}
+
+.idiom-option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.idiom-option:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark .idiom-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.idiom-option.active {
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+body.dark .idiom-option.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Inverter ícones no modo claro */
+body.light .global-icon,
+body.light .arrow-icon {
+  filter: invert(1);
+}

@@ -1,0 +1,32 @@
+.social-links {
+  display: flex;
+  gap: 14px;
+  align-items: end;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.social-icon {
+  width: 24px;
+  transition: filter 0.3s ease;
+}
+
+/* Modo Escuro: ícones brancos (sem filtro, pois já são brancos) */
+body.dark .social-icon {
+  filter: none;
+}
+
+/* Modo Claro: inverte os ícones brancos para preto */
+body.light .social-icon {
+  filter: invert(1);
+}

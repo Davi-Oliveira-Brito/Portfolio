@@ -1,50 +1,54 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
   margin: 0;
-  @font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../public/Assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../public/Assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../public/Assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Poppins-Medium';
-    src: url('../public/Assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Poppins-Light';
-    src: url('../public/Assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Poppins-Black';
-    src: url('../public/Assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Remove estilo padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Modo Escuro (padrão) */
+:root,
+body.dark {
+  --bg-primary: linear-gradient(90deg, #060606 0.94%, #3d3d3d 100%);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #0D0D0D;
+  --text-primary: #ffffff;
+  --text-secondary: #000000;
+}
+
+/* Modo Claro */
+body.light {
+  --bg-primary: linear-gradient(90deg, #f9f9f9 0.94%, #c2c2c2 100%);
+  --bg-secondary: #000000;
+  --bg-tertiary: #F2F2F2;
+  --text-primary: #000000;
+  --text-secondary: #ffffff;
 }

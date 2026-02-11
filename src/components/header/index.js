@@ -1,43 +1,41 @@
-import { React, useState } from 'react';
-import { Link } from 'react-scroll';
-import './index.scss'
+import './index.scss';
+import SetIdiom from '../SetIdiom';
+import DarkLightMode from '../light-darkMode';
+import { useState } from 'react';
 
-import DarkLightMode from '../light-darkMode/index.js';
-
-const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
-
-    const closeMenu = () => {
-        setMenuOpen(false);
-    };
+export default function Header() {
+    const [activeLink, setActiveLink] = useState('Inicio');
 
     return (
-        <header className="header">
-            <div className="headerr">
-
-                {/* Ícone do menu hambúrguer */}
-                <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                {/* Menu de navegação */}
-                <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                    <Link smooth={true} duration={500} className="nav-link" to="Home" onClick={closeMenu}>Home</Link>
-                    <Link smooth={true} duration={500} className="nav-link" to="SobreMim" onClick={closeMenu}>Sobre Mim</Link>
-                    <Link smooth={true} duration={500} className="nav-link" to="Projetos" onClick={closeMenu}>Projetos</Link>
-                    <Link smooth={true} duration={500} className="nav-link" to="Contato" onClick={closeMenu}>Contato</Link>
-                </nav>
-                <DarkLightMode/>
+        <header className='Header'>
+            <nav className='nav-links'>
+                <a 
+                    href="#Home" 
+                    className={activeLink === 'Inicio' ? 'active' : ''}
+                    onClick={() => setActiveLink('Inicio')}
+                >
+                    Inicio
+                </a>
+                <a 
+                    href="#Sobre" 
+                    className={activeLink === 'Sobre' ? 'active' : ''}
+                    onClick={() => setActiveLink('Sobre')}
+                >
+                    Sobre
+                </a>
+                <a 
+                    href="#Projetos" 
+                    className={activeLink === 'Projetos' ? 'active' : ''}
+                    onClick={() => setActiveLink('Projetos')}
+                >
+                    Projetos
+                </a>
+            </nav>
+            
+            <div className='header-controls'>
+                <SetIdiom />
+                <DarkLightMode />
             </div>
         </header>
     );
-};
-
-
-export default Header;
+}

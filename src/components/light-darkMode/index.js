@@ -7,14 +7,12 @@ function DarkLightMode() {
     });
 
     useEffect(() => {
-
         if (isLight) {
-            document.body.id = 'light';
+            document.body.className = 'light';
         } else {
-            document.body.id = 'dark';
+            document.body.className = 'dark';
         }
     }, [isLight]);
-
 
     const toggleTheme = () => {
         const newTheme = !isLight ? 'light' : 'dark'; 
@@ -23,19 +21,19 @@ function DarkLightMode() {
     };
 
     return (
-
-        < div>
-
-            <input type="checkbox"
-                className="checkbox" id="chk"
-                checked={isLight}
-                onChange={toggleTheme} />
-
-            <label className="label" htmlFor="chk">
-                <span className="ball"></span>
-            </label>
+        <div className="theme-toggle-container">
+            <button 
+                className="theme-toggle-button" 
+                onClick={toggleTheme}
+                aria-label="Alternar tema"
+            >
+                <img 
+                    src={isLight ? "/Assets/images/Moon.png" : "/Assets/images/Sun.png"}
+                    alt={isLight ? "Sol" : "Lua"} 
+                    className="theme-icon"
+                />
+            </button>
         </div>
-
     );
 }
 
