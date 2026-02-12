@@ -40,6 +40,7 @@ body.dark {
   --bg-primary: linear-gradient(90deg, #060606 0.94%, #3d3d3d 100%);
   --bg-secondary: #ffffff;
   --bg-tertiary: #0D0D0D;
+  --card: #3f3f3f;
   --text-primary: #ffffff;
   --text-secondary: #000000;
 }
@@ -51,4 +52,6 @@ body.light {
   --bg-tertiary: #F2F2F2;
   --text-primary: #000000;
   --text-secondary: #ffffff;
+
+  --card: #ffffff;
 }

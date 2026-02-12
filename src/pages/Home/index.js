@@ -1,6 +1,6 @@
 import "./index.scss";
 import SocialLinks from "../../components/SocialLinks";
-import Header from "../../components/Header";
+
 
 export default function Home() {
   const CurriculoDownload = () => {
@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main className="Home">
-      <Header/>
+
       
       <section className="HomeContent" id="Home">
         <div className="HomeLeft">

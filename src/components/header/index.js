@@ -1,41 +1,35 @@
-import './index.scss';
-import SetIdiom from '../SetIdiom';
-import DarkLightMode from '../light-darkMode';
-import { useState } from 'react';
+import "./index.scss";
+import SetIdiom from "../SetIdiom";
+import DarkLightMode from "../light-darkMode";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
-    const [activeLink, setActiveLink] = useState('Inicio');
+  const location = useLocation();
 
-    return (
-        <header className='Header'>
-            <nav className='nav-links'>
-                <a 
-                    href="#Home" 
-                    className={activeLink === 'Inicio' ? 'active' : ''}
-                    onClick={() => setActiveLink('Inicio')}
-                >
-                    Inicio
-                </a>
-                <a 
-                    href="#Sobre" 
-                    className={activeLink === 'Sobre' ? 'active' : ''}
-                    onClick={() => setActiveLink('Sobre')}
-                >
-                    Sobre
-                </a>
-                <a 
-                    href="#Projetos" 
-                    className={activeLink === 'Projetos' ? 'active' : ''}
-                    onClick={() => setActiveLink('Projetos')}
-                >
-                    Projetos
-                </a>
-            </nav>
-            
-            <div className='header-controls'>
-                <SetIdiom />
-                <DarkLightMode />
-            </div>
-        </header>
-    );
+  return (
+    <header className="Header">
+      <nav className="nav-links">
+        <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+          Inicio
+        </Link>
+        <Link
+          to="/About"
+          className={location.pathname === "/sobre" ? "active" : ""}
+        >
+          Sobre
+        </Link>
+        <Link
+          to="/Projects"
+          className={location.pathname === "/projetos" ? "active" : ""}
+        >
+          Projetos
+        </Link>
+      </nav>
+
+      <div className="header-controls">
+        <SetIdiom />
+        <DarkLightMode />
+      </div>
+    </header>
+  );
 }
