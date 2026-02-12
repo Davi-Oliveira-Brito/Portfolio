@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/index.js";
 import About from "./pages/About/index.js";
-import Header from './components/Header';
+import Header from './components/header/index.js';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
