@@ -1,6 +1,6 @@
 import "./index.scss";
 import SocialLinks from "../../components/SocialLinks";
-
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const CurriculoDownload = () => {
@@ -11,25 +11,24 @@ export default function Home() {
     link.click();
     document.body.removeChild(link);
   };
+  const { t } = useTranslation();
 
   return (
     <main className="Home">
-
-      
       <section className="HomeContent" id="Home">
         <div className="HomeLeft">
           <h1>Davi Oliveira Brito</h1>
-          <p>Desenvolvedor Full Stack</p>
-          
+          <p>{t('home.subtitulo')}</p>
+
           <SocialLinks />
-          
+
           <button className="btn-download" onClick={CurriculoDownload}>
-            Baixar CV
+            {t('home.botao')}
           </button>
         </div>
 
         <div className="HomeRight">
-          <img src="/Assets/images/Me.png" alt="Davi Oliveira Brito" />
+          <img src="/Assets/images/Me.png" alt={t('home.titulo')} />
         </div>
       </section>
     </main>

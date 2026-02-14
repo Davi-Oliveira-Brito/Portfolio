@@ -1,9 +1,13 @@
 import "./index.scss";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function SetIdiom() {
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("PT");
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem('language')?.toUpperCase() || 'PT'
+  );
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -12,8 +16,8 @@ export default function SetIdiom() {
   const selectLanguage = (lang) => {
     setSelectedLanguage(lang);
     setIsOpen(false);
-    // Aqui você pode adicionar lógica para mudar o idioma do site
-    localStorage.setItem("language", lang);
+    i18n.changeLanguage(lang.toLowerCase());
+    localStorage.setItem("language", lang.toLowerCase());
   };
 
   return (
@@ -30,13 +34,13 @@ export default function SetIdiom() {
 
       {isOpen && (
         <div className="idiom-dropdown">
-          <button 
+          <button
             className={`idiom-option ${selectedLanguage === 'PT' ? 'active' : ''}`}
             onClick={() => selectLanguage('PT')}
           >
             PT
           </button>
-          <button 
+          <button
             className={`idiom-option ${selectedLanguage === 'EN' ? 'active' : ''}`}
             onClick={() => selectLanguage('EN')}
           >

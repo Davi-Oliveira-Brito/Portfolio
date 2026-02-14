@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "inicio": "Inicio",
+        "sobre": "Sobre",
+        "projetos": "Projetos"
+    },
+    "home": {
+        "titulo": "Davi Oliveira Brito",
+        "subtitulo": "Desenvolvedor Full Stack",
+        "botao": "Baixar CV"
+    },
+    "about": {
+        "titulo": "Sobre Mim",
+        "bio": "Tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas, com experiência em projetos Full Stack. Atualmente estou focado em NestJS e TypeScript, com interesse em backend, e iniciando meus estudos em C# e .NET. Também tenho experiência com Figma, atuando desde a prototipação até a implementação das soluções.",
+        "tecnologias": "Tecnologias",
+        "stacks": {
+            "principal": {
+                "tipo": "Stack Principal",
+                "desc": "Desenvolvimento full stack com foco em aplicações web modernas, criação de APIs REST, autenticação e integração com banco de dados relacional."
+            },
+            "frontend": {
+                "tipo": "Front End",
+                "desc": "Construção de interfaces responsivas e acessíveis, aplicando boas práticas de componentização, estilização e experiência do usuário."
+            },
+            "backend": {
+                "tipo": "Back End e Banco de Dados",
+                "desc": "Estruturação de APIs, regras de negócio e modelagem de dados, com estudos e prática em ecossistema .NET e bancos NoSQL."
+            },
+            "devops": {
+                "tipo": "Versionamento e DevOps",
+                "desc": "Controle de versão, organização de tarefas e integração contínua utilizando Git, Azure DevOps e fluxos colaborativos."
+            }
+        }
+    },
+       "projects": {
+    "titulo": "Projetos",
+    "visitar": "Visitar",
+    "items": [
+      {
+        "img": "/Assets/images/AuthAPI.png",
+        "title": "AuthAPI",
+        "desc": "API de autenticação, implementando fluxo completo de SignUp, SignIn e Me, com hash de senha, JWT, validação de dados e guards.",
+        "languages": [
+          "TypeScript",
+          "Nest",
+          "PostgreSQL"
+        ],
+        "cta": "https://github.com/Davi-Oliveira-Brito/AuthAPI"
+      },
+      {
+        "img": "/Assets/images/RenameAutomation.png",
+        "title": "Rename-Automation",
+        "desc": "Script em Python que automatiza o processo de renomear arquivos XML e PDF de notas fiscais eletrônicas.",
+        "languages": [
+          "TypeScript",
+          "Nest",
+          "PostgreSQL"
+        ],
+        "cta": "https://github.com/Davi-Oliveira-Brito/Rename-Automation"
+      },
+      {
+        "img": "/Assets/images/MovieCatalog.png",
+        "title": "Movie Catalog",
+        "desc": "O MovieCatalog é uma aplicação web desenvolvida em React que consome a API pública do TMDB (The Movie Database) para exibir um catálogo de filmes de forma simples, moderna e responsiva.",
+        "languages": [
+          "TypeScript",
+          "Nest",
+          "PostgreSQL"
+        ],
+        "cta": "https://moviecatalogg.netlify.app/"
+      }
+    ]
+  }
+}

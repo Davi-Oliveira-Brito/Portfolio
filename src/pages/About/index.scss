@@ -7,16 +7,17 @@
   min-height: 100vh;
   background: var(--bg-primary);
 
+  
   .AboutContent {
     color: var(--text-primary);
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-
     padding: 120px 60px 80px 60px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 65vw;
     min-height: 100vh;
     gap: 60px;
 
@@ -54,7 +55,39 @@
       .Stacks {
         display: flex;
         flex-wrap: wrap;
-        gap: 1em;
+        justify-content: space-around;
+        gap: 1.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .About {
+    .AboutContent {
+      max-width: 80vw;
+
+      padding: 120px 24px 60px 24px;
+      gap: 40px;
+
+      .AboutTop {
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+        }
+      }
+
+      .AboutBottom {
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        .Stacks {   
+          flex-direction: column;
+        }
       }
     }
   }

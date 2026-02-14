@@ -1,12 +1,12 @@
+
 .Stack {
     display: flex;
     flex-direction: column;
-
     gap: 16px;
     padding: 24px;
     border-radius: 16px;
-    max-width: 500px ;  
-    width: 500px ;  
+    max-width: 500px;
+    width: 500px;
 
     background: var(--card);
 
@@ -44,4 +44,15 @@
     line-height: 1.6;
     color: var(--text-primary);
     opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .Stack {
+        width: 100%;
+        max-width: 100%;
+
+        &:hover {
+            transform: none;
+        }
+    }
 }

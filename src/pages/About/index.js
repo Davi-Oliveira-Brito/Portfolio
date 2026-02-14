@@ -1,25 +1,22 @@
 import Stack from "../../components/Stacks";
 import "./index.scss";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <main className="About" id="About">
       <section className="AboutContent">
         <div className="AboutTop">
-          <h1>Sobre Mim</h1>
-          <p>
-            Tenho 19 anos e sou estudante de Análise e Desenvolvimento de
-            Sistemas, com experiência em projetos Full Stack. Atualmente estou
-            focado em NestJS e TypeScript, com interesse em backend, e iniciando
-            meus estudos em C# e .NET. Também tenho experiência com Figma,
-            atuando desde a prototipação até a implementação das soluções.
-          </p>
+          <h1>{t("about.titulo")}</h1>
+          <p>{t("about.bio")}</p>
         </div>
         <div className="AboutBottom">
-          <h1>Tecnologias</h1>
+          <h1>{t("about.tecnologias")}</h1>
           <div className="Stacks">
             <Stack
-              tipo="Stack Principal"
+              tipo={t("about.stacks.principal.tipo")}
               icons={[
                 { img: "/Assets/images/JavaScript.png", alt: "JavaScript" },
                 { img: "/Assets/images/TypeScript.png", alt: "TypeScript" },
@@ -27,10 +24,10 @@ export default function About() {
                 { img: "/Assets/images/React.png", alt: "React" },
                 { img: "/Assets/images/PostgreSQL.png", alt: "PostgreSQL" },
               ]}
-              desc="Desenvolvimento full stack com foco em aplicações web modernas, criação de APIs REST, autenticação e integração com banco de dados relacional."
+              desc={t("about.stacks.principal.desc")}
             />
             <Stack
-              tipo="Front End"
+              tipo={t("about.stacks.frontend.tipo")}
               icons={[
                 { img: "/Assets/images/JavaScript.png", alt: "JavaScript" },
                 { img: "/Assets/images/HTML.png", alt: "HTML" },
@@ -39,26 +36,26 @@ export default function About() {
                 { img: "/Assets/images/Next.png", alt: "Next" },
                 { img: "/Assets/images/Figma.png", alt: "Figma" },
               ]}
-              desc="Construção de interfaces responsivas e acessíveis, aplicando boas práticas de componentização, estilização e experiência do usuário."
+              desc={t("about.stacks.frontend.desc")}
             />
             <Stack
-              tipo="Back End e Banco de Dados"
+              tipo={t("about.stacks.backend.tipo")}
               icons={[
                 { img: "/Assets/images/CSharp.png", alt: "C#" },
                 { img: "/Assets/images/NET.png", alt: ".NET" },
                 { img: "/Assets/images/PostgreSQL.png", alt: "PostgreSQL" },
                 { img: "/Assets/images/MongoDB.png", alt: "MongoDB" },
               ]}
-              desc="Estruturação de APIs, regras de negócio e modelagem de dados, com estudos e prática em ecossistema .NET e bancos NoSQL."
+              desc={t("about.stacks.backend.desc")}
             />
             <Stack
-              tipo="Versionamento e DevOps"
+              tipo={t("about.stacks.devops.tipo")}
               icons={[
                 { img: "/Assets/images/Git.png", alt: "Git" },
                 { img: "/Assets/images/GitHub.png", alt: "GitHub" },
                 { img: "/Assets/images/AzureDevOps.png", alt: "AzureDevOps" },
               ]}
-              desc="Controle de versão, organização de tarefas e integração contínua utilizando Git, Azure DevOps e fluxos colaborativos."
+              desc={t("about.stacks.devops.desc")}
             />
           </div>
         </div>
