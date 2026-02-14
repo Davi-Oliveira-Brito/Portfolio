@@ -40,21 +40,21 @@
                 "img": "/Assets/images/AuthAPI.png",
                 "title": "AuthAPI",
                 "desc": "Authentication API implementing a full SignUp, SignIn and Me flow, with password hashing, JWT, data validation and guards.",
-                "languages": ["TypeScript", "Nest", "PostgreSQL"],
+                "languages": ["TypeScript", "Nest", "PostgreSQL", "Prisma", "JWT"],
                 "cta": "https://github.com/Davi-Oliveira-Brito/AuthAPI"
             },
             {
                 "img": "/Assets/images/RenameAutomation.png",
                 "title": "Rename-Automation",
                 "desc": "Python script that automates the process of renaming XML and PDF files of electronic invoices.",
-                "languages": ["TypeScript", "Nest", "PostgreSQL"],
+                "languages": ["Python", "XML Parsing", "Regex", "File System Automation"],
                 "cta": "https://github.com/Davi-Oliveira-Brito/Rename-Automation"
             },
             {
                 "img": "/Assets/images/MovieCatalog.png",
                 "title": "Movie Catalog",
                 "desc": "MovieCatalog is a web application built in React that consumes the public TMDB API to display a simple, modern and responsive movie catalog.",
-                "languages": ["TypeScript", "Nest", "PostgreSQL"],
+                "languages": ["JavaScript", "React", "TMDB API", "Sass"],
                 "cta": "https://moviecatalogg.netlify.app/"
             }
         ]

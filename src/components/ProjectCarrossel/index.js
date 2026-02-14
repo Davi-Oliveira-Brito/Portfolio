@@ -48,9 +48,9 @@ export default function ProjectCarrossel({ projects }) {
                         className="carrossel-cards"
                         key={current}
                         custom={direction}
-                        initial={{ opacity: 0, x: direction * 610 }}
+                        initial={{ opacity: 0, x: direction * 60 }}
                         animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: direction * -610 }}
+                        exit={{ opacity: 0, x: direction * -60 }}
                         transition={{ duration: 0.3, ease: 'easeInOut' }}
                     >
                         {visible.map((project, index) => (

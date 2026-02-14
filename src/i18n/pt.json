@@ -43,7 +43,9 @@
         "languages": [
           "TypeScript",
           "Nest",
-          "PostgreSQL"
+          "PostgreSQL",
+          "Prisma",
+          "JWT"
         ],
         "cta": "https://github.com/Davi-Oliveira-Brito/AuthAPI"
       },
@@ -52,20 +54,22 @@
         "title": "Rename-Automation",
         "desc": "Script em Python que automatiza o processo de renomear arquivos XML e PDF de notas fiscais eletrônicas.",
         "languages": [
-          "TypeScript",
-          "Nest",
-          "PostgreSQL"
+          "Python",
+          "XML Parsing",
+          "Regex",
+          "File System Automation"
         ],
         "cta": "https://github.com/Davi-Oliveira-Brito/Rename-Automation"
       },
       {
         "img": "/Assets/images/MovieCatalog.png",
         "title": "Movie Catalog",
-        "desc": "O MovieCatalog é uma aplicação web desenvolvida em React que consome a API pública do TMDB (The Movie Database) para exibir um catálogo de filmes de forma simples, moderna e responsiva.",
+        "desc": "O MovieCatalog é uma aplicação web em React que consome a API do TMDB para exibir um catálogo de filmes de forma simples e responsiva.",
         "languages": [
-          "TypeScript",
-          "Nest",
-          "PostgreSQL"
+          "JavaScript",
+          "React",
+          "TMDB API",
+          "Sass"
         ],
         "cta": "https://moviecatalogg.netlify.app/"
       }
