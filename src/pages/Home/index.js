@@ -2,6 +2,7 @@ import "./index.scss";
 import SocialLinks from "../../components/SocialLinks";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
 
 const stagger = {
   hidden: {},
@@ -23,21 +24,51 @@ const fromRight = {
 };
 
 export default function Home() {
-  const CurriculoDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Assets/pdf/CV - Davi Oliveira Brito.pdf";
-    link.download = "CV - Davi Oliveira Brito.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const { t } = useTranslation();
+
+  const CurriculoDownload = () => {
+    const toastId = toast.loading(t("home.Warning"), {
+      position: "top-right",
+      style: {
+        background: "linear-gradient(135deg, #111111 0%, #1a1a1a 100%)",
+        boxShadow: "0 8px 24px rgba(0, 0, 0, 0.4)",
+        color: "#f5f5f5",
+        fontWeight: "500",
+        padding: "16px 24px",
+        borderRadius: "10px",
+        border: "1px solid rgba(255, 255, 255, 0.08)",
+      },
+    });
+
+    setTimeout(() => {
+      toast.dismiss(toastId);
+      const link = document.createElement("a");
+      link.href = t("home.CV");
+      link.download = t("home.CV_Name");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 2000);
+  };
 
   return (
     <main className="Home">
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            background: "linear-gradient(135deg, #111111 0%, #1a1a1a 100%)",
+            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.4)",
+            color: "#f5f5f5",
+            fontWeight: "500",
+            padding: "16px 24px",
+            borderRadius: "10px",
+            border: "1px solid rgba(255, 255, 255, 0.08)",
+          },
+        }}
+      />
       <section className="HomeContent" id="Home">
-
         <motion.div
           className="HomeLeft"
           variants={stagger}
@@ -66,7 +97,6 @@ export default function Home() {
         >
           <img src="/Assets/images/Me.png" alt={t("home.titulo")} />
         </motion.div>
-
       </section>
     </main>
   );
