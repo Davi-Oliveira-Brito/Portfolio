@@ -1,21 +1,8 @@
 import "./index.scss";
-import ProjectCarrossel from "../../components/ProjectCarrossel";
+import ProjectCard from "../../components/ProjectCard";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-
-const stagger = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
+import { fadeUp, stagger } from "../../animations";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -30,9 +17,19 @@ export default function Projects() {
         animate="show"
       >
         <motion.h1 variants={fadeUp}>{t('projects.titulo')}</motion.h1>
-        <motion.div variants={fadeUp}>
-          <ProjectCarrossel projects={projects} />
-        </motion.div>
+        <div className="ProjectGrid">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={project.title}
+              index={index}
+              img={project.img}
+              title={project.title}
+              desc={project.desc}
+              languages={project.languages}
+              cta={project.cta}
+            />
+          ))}
+        </div>
       </motion.section>
     </main>
   );
